@@ -6,8 +6,10 @@ public class Place {
     private ArrayList<Review> reviews;
     private ArrayList<Review> issues;
     private double avgRating;
+    private String key;
 
-    Place() {
+    Place(String key) {
+        this.key = key;
         reviews = new ArrayList<>();
         issues = new ArrayList<>();
         setRating();
